@@ -198,3 +198,9 @@ main.enter #arch .names:last-child{animation-delay:.9s}
 @keyframes bouquetRise{from{opacity:0;transform:translateX(-50%) translateY(120px)}to{opacity:1;transform:translateX(-50%)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){main.enter #arch *{animation:none!important}#cover.opening .card{transition:none}}
+
+#send, #adminBtn {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
