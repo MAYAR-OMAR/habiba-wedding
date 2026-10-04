@@ -152,7 +152,7 @@ footer small{display:block;font:300 24px Inter,sans-serif;opacity:.4;margin-top:
 
 /* ---------- arch page bouquet ---------- */
 #arch .bouquet{position:absolute;bottom:0;left:50%;width:min(90vw,640px);aspect-ratio:1100/595;transform:translateX(-50%);background:var(--img-bouquet) center bottom/contain no-repeat;pointer-events:none}
-@media(max-width:700px){#arch .bouquet{width:120vw;bottom:2vh}}
+@media(max-width:700px){#arch .bouquet{width:120vw;bottom:12vh}}
 
 /* ---------- cover card corner flowers (top-left + bottom-right) ---------- */
 .card::before,.card::after{content:"";position:absolute;width:38%;aspect-ratio:700/738;background-size:contain;background-repeat:no-repeat;pointer-events:none}
