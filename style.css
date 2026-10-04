@@ -204,3 +204,18 @@ main.enter #arch .names:last-child{animation-delay:.9s}
   z-index: 10;
   cursor: pointer;
 }
+.map-card {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin: 15px 0;
+}
+
+.map-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
