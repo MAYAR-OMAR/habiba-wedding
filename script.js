@@ -4,7 +4,12 @@ const CONFIG = {
   autoScroll: { delay: 2500, speed: 55 },      // ms before it starts, pixels per second
   eventTitle: "Mohab & Habiba Wedding Reception",
   eventPlace: "Emilia's venue, 537 Line 7, South, Orabi, Cairo",
-  gallery: Array.from({length:10},(_,i)=>`assets/gallery-${i+1}.jpg`)  // replace with your photos
+gallery: [
+  "img1.jfif",
+  "img2.jfif",
+  "img3.jfif",
+  "img4.jfif"
+] // replace with your photos
 };
 const $=s=>document.querySelector(s);
 
@@ -52,7 +57,13 @@ slides.forEach((s,i)=>s.onclick=()=>{cur=i;render()});
 let tx=0;flow.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
 flow.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>40)go(d<0?1:-1)});
 addEventListener('resize',render);render();
-
+// Auto-play lel gallery kol 3 seconds
+setInterval(() => {
+  const nextBtn = document.getElementById('next');
+  if (nextBtn) {
+    nextBtn.click();
+  }
+}, 3000);
 /* countdown */
 const start=new Date(CONFIG.eventStart);
 function tick(){let s=Math.max(0,Math.floor((start-Date.now())/1e3));
