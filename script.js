@@ -6,7 +6,10 @@ const CONFIG = {
   eventPlace: "Emilia's venue, 537 Line 7, South, Orabi, Cairo",
   gallery: [
     "img1.jfif",
-    "img2.jfif"
+    "img2.jfif",
+    "img3.jfif",
+    "img4.jfif"
+
   ]
 };
 const $=s=>document.querySelector(s);
